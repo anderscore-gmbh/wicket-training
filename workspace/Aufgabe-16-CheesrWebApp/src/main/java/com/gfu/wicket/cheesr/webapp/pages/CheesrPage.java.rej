@@ -1,0 +1,17 @@
+--- src/main/java/com/gfu/wicket/cheesr/webapp/pages/CheesrPage.java	2017-04-06 12:06:07.656992302 +0200
++++ src/main/java/com/gfu/wicket/cheesr/webapp/pages/CheesrPage.java	2017-04-06 12:06:20.700991686 +0200
+@@ -12,4 +13,14 @@
+ 	public Cart getCart(){
+ 		return ((CheesrSession)getSession()).getCart();
+ 	}
++	
++	public Model<Cart> getCartModel() {
++		return new Model<Cart>(){
++			private static final long serialVersionUID = 1L;
++			@Override
++			public Cart getObject() {
++				return getCart();
++			}
++		};
++	}
+ }

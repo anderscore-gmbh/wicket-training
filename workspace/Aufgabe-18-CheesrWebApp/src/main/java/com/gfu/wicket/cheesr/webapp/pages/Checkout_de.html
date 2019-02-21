@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<title>Wicket Training: Cheesr - Cheese Online</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+	integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+	crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+	integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+	crossorigin="anonymous">
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+	integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+	crossorigin="anonymous"></script>
+</head>
+<body style="padding-top: 50px;">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Cheesr - Cheese Online</a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+	<wicket:extend>
+		<div class="col-md-6">
+			<div wicket:id="cart"></div>
+		</div>
+		<div class="col-md-6">
+			<div wicket:id="feedback">Feedback</div>
+
+			<form wicket:id="form">
+				<h2>Zur Kasse gehen</h2>
+				<p>Bitte geben Sie die Lieferadresse an</p>
+
+				<div class="form-group">
+					<label for="name">Name</label> <input wicket:id="name" name="name"
+						type="text" class="form-control" placeholder="name" />
+				</div>
+				<div class="form-group">
+					<label for="street">Straße</label> <input wicket:id="street"
+						name="street" type="text" class="form-control"
+						placeholder="Straße" />
+				</div>
+
+				<div class="form-group">
+					<label for="city">Stadt</label> <input wicket:id="city" name="city"
+						type="text" class="form-control" placeholder="Stadt" />
+				</div>
+				<div class="form-group">
+					<label for="zipcode">Postleitzahl</label> <input wicket:id="zipcode"
+						name="zipcode" type="text" class="form-control"
+						placeholder="Postleitzahl" />
+				</div>
+
+				<input wicket:id="cancel" type="button" value="Cancel" /> <input
+					wicket:id="order" type="submit" value="Order!" />
+			</form>
+
+		</div>
+	</wicket:extend>
+
+	</div>
+	<!-- /.container -->
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+Tag 1:
+------
+
+Tag-1_1-Begruessung
+Tag-1_2-Motivation_Hello_Wicket
+Übung "Hello Wicket" (Slides)
+
+MITTAGSPAUSE
+
+Tag-1_3-Architektur
+Übung "Lebenszyklus einer Komponente" (Slides)
+
+
+Tag 2:
+------
+
+Übungen 1, 2
+Tag-2_1-Bestandteile_Models.pptx
+Tag-2_2-Bestandteile_Components.pptx
+Übungen 3, 4
+
+MITTAGSPAUSE
+
+Tag-2_3-Bestandteile_Formulare.pptx
+Übungen 5, 6, 7
+Tag-2_4-Bestandteile_Ajax.pptx
+(Tag-2_5-Bestandteile_Ressources.pptx)
+
+
+Tag 3:
+------
+
+Übung 8
+Tag-3_1-Testing
+Übung 9 
+
+MITTAGSPAUSE
+
+Übungen 10 - 18
+Tag-3_2-Best-Practices
+Tag-3_3-Abschluss
