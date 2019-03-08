@@ -1,2 +1,1 @@
-# wicket-training
-
+# Training "Einführung Apache Wicket"
