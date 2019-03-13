@@ -1,6 +1,7 @@
 package net.gfu.wicket.backend.bo;
 
 import java.io.Serializable;
+import java.util.HashMap;
 import java.util.Objects;
 import java.util.UUID;
 
@@ -11,6 +12,8 @@ public class Cheese extends Lockable implements Serializable{
 	private String description;
 	private double price;
 	private int id;
+
+	private HashMap<Integer,CheeseAttribute> additionalAttributes = new HashMap<>();
 
 	public Cheese(){
 	}
@@ -59,14 +62,18 @@ public class Cheese extends Lockable implements Serializable{
 		return Objects.hash(id);
 	}
 
+	public HashMap<Integer, CheeseAttribute> getAdditionalAttributes() {
+		return additionalAttributes;
+	}
+
 	@Override
 	public String toString() {
 		return "Cheese{" +
 				"name='" + name + '\'' +
 				", description='" + description + '\'' +
 				", price=" + price +
-				", lockingVersion=" + getLockingVersion() +
 				", id=" + id +
+				", additionalAttributes=" + additionalAttributes +
 				'}';
 	}
 }

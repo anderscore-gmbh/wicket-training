@@ -6,38 +6,12 @@ import javax.annotation.ManagedBean;
 
 import net.gfu.wicket.backend.bo.Cart;
 import net.gfu.wicket.backend.bo.Cheese;
+import net.gfu.wicket.backend.bo.CheeseDB;
 
 @ManagedBean
 public class BOServices {
 
-	private static final HashMap<Integer, Cheese> cheeses = new HashMap<>();
-
-	static {
-		cheeses.put(1, new Cheese(1, "Gouda", "Gouda is a yellowish Dutch[...]", 1.65));
-
-		cheeses.put(2, new Cheese(2, "Edam", "Edam (Dutch Edammer) is a D[...]",
-				1.05));
-		cheeses.put(3, new Cheese(3, "Maasdam", "Maasdam cheese is a Dutc[...]",
-				2.35));
-		cheeses.put(4, new Cheese(4, "Brie", "Brie is a soft cows' milk c[...]",
-				3.15));
-		cheeses.put(5, new Cheese(5, "Buxton Blue", "Buxton Blue cheese i[...]",
-				0.99));
-		cheeses.put(6, new Cheese(6, "Parmesan", "Parmesan is a grana, a [...]",
-				1.99));
-		cheeses.put(7, new Cheese(7, "Cheddar", "Cheddar cheese is a hard[...]",
-				2.95));
-		cheeses.put(8, new Cheese(8, "Roquefort", "Roquefort is a ewe's-m[...]",
-				1.67));
-		cheeses.put(9, new Cheese(9, "Boursin", "Boursin Cheese is a soft[...]",
-				1.33));
-		cheeses.put(10, new Cheese(10, "Camembert", "Camembert is a soft, c[...]",
-				1.69));
-		cheeses.put(11, new Cheese(11, "Emmental", "Emmental is a yellow, m[...]",
-				2.39));
-		cheeses.put(12, new Cheese(12, "Reblochon", "Reblochon is a French [...]",
-				2.99));
-	}
+	private static final HashMap<Integer, Cheese> cheeses = new CheeseDB().getCheeses();
 
 	public BOServices(){
 
