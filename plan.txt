@@ -36,6 +36,6 @@ Tag-3_1-Testing
 
 MITTAGSPAUSE
 
-Übungen 10 - 18
+Übungen 10 - 20
 Tag-3_2-Best-Practices
 Tag-3_3-Abschluss
