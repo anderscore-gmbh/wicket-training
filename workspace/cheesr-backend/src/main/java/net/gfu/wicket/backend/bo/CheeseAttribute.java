@@ -3,7 +3,7 @@ package net.gfu.wicket.backend.bo;
 import java.io.Serializable;
 import java.util.Objects;
 
-public abstract class CheeseAttribute<T extends Serializable> {
+public abstract class CheeseAttribute<T extends Serializable> implements Serializable {
     private String attributeName;
     private T attributeValue;
 
