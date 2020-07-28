@@ -3,6 +3,10 @@ package net.gfu.wicket.cheesr.webapp.components;
 import java.text.NumberFormat;
 import java.util.List;
 
+import net.gfu.wicket.cheesr.webapp.pages.Index;
+import org.apache.wicket.markup.head.CssHeaderItem;
+import org.apache.wicket.markup.head.IHeaderResponse;
+import org.apache.wicket.markup.head.JavaScriptHeaderItem;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.markup.html.list.ListItem;
@@ -14,11 +18,13 @@ import org.apache.wicket.model.PropertyModel;
 
 import net.gfu.wicket.backend.bo.Cart;
 import net.gfu.wicket.backend.bo.Cheese;
+import org.apache.wicket.request.resource.CssResourceReference;
+import org.apache.wicket.request.resource.JavaScriptResourceReference;
 
 public class ShoppingCartPanel extends Panel {
 	private static final long serialVersionUID = 1L;
 	private final IModel<Cart> cart;
-	
+
 	public ShoppingCartPanel(String id, IModel<Cart> cart){
 		super(id);
 		this.cart = cart;

@@ -36,8 +36,8 @@ public class ShoppingCartPanelTest {
 		address.setCity("Musterstadt");
 		
 		List<Cheese> cheeses = new ArrayList<>();
-		cheeses.add(new Cheese("Gouda", "Dutch Cheese", 1.33));
-		cheeses.add(new Cheese("Edam", "Fine Edam cheese", 0.65));
+		cheeses.add(new Cheese(0, "Gouda", "Dutch Cheese", 1.33));
+		cheeses.add(new Cheese(0, "Edam", "Fine Edam cheese", 0.65));
 		
 		cart = new Cart();
 		cart.setBillingAddress(address);
@@ -59,7 +59,7 @@ public class ShoppingCartPanelTest {
 		tester.assertLabel("panel:cart:1:price", "$ 0.65");
 		tester.assertComponent("panel:cart:1:remove", Link.class);
 
-		tester.assertLabel("panel:total", "1,98 €");
+		tester.assertLabel("panel:total", "$1.98");
 	}
 	
 	@Test

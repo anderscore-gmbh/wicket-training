@@ -17,6 +17,7 @@ public class RequiredFieldBehaviour extends Behavior {
 			FormComponent<?> f = (FormComponent<?>)component;
 			FeedbackMessages feedbackMessages = f.getFeedbackMessages();
 			if(feedbackMessages != null && feedbackMessages.size() > 0){
+				System.out.println(tag);
 				String attribute = tag.getAttribute("class") ;
 				attribute = (attribute == null)? "" : attribute;
 				tag.put("class", String.format("%s has-error", attribute));

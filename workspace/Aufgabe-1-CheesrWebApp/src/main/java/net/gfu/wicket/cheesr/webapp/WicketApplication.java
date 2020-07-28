@@ -22,7 +22,7 @@ public class WicketApplication extends WebApplication {
 	@Override
 	public void init() {
 		super.init();
-
+		// getCspSettings().blocking().disabled();
 		// add your configuration here
 	}
 }
