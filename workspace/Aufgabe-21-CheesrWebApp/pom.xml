@@ -38,11 +38,11 @@
 	<properties>
 		<backend.version>1.0-SNAPSHOT</backend.version>
 
-		<wicket.version>8.7.0</wicket.version>
+		<wicket.version>9.0.0</wicket.version>
 		<spring.version>5.2.3.RELEASE</spring.version>
-		<jetty9.version>9.4.26.v20200117</jetty9.version>
+		<jetty9.version>9.4.29.v20200521</jetty9.version>
 		<slf4j.version>1.7.30</slf4j.version>
-		<junit.version>5.6.0</junit.version>
+		<junit.version>5.6.2</junit.version>
 		<junit.platform.version>1.6.0</junit.platform.version>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

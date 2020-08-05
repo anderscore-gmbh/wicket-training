@@ -2,15 +2,31 @@ package net.gfu.wicket.examples.pages;
 
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.markup.html.AjaxFallbackLink;
+import org.apache.wicket.markup.head.CssHeaderItem;
+import org.apache.wicket.markup.head.IHeaderResponse;
+import org.apache.wicket.markup.head.JavaScriptHeaderItem;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.model.Model;
+import org.apache.wicket.request.resource.CssResourceReference;
+import org.apache.wicket.request.resource.JavaScriptResourceReference;
 
 import java.util.Optional;
 
 public class ClickCounterPage extends WebPage {
 	private static final long serialVersionUID = 1L;
+
+	@Override
+	public void renderHead(IHeaderResponse response) {
+		super.renderHead(response);
+		response.render(CssHeaderItem.forReference(new CssResourceReference(ClickCounterPage.class, "../assets/bootstrap.min.css")));
+		response.render(CssHeaderItem.forReference(new CssResourceReference(ClickCounterPage.class, "../assets/bootstrap-theme.min.css")));
+		response.render(CssHeaderItem.forReference(new CssResourceReference(ClickCounterPage.class, "../assets/style.css")));
+		response.render(JavaScriptHeaderItem.forReference(new JavaScriptResourceReference(ClickCounterPage.class, "../assets/jquery-3.3.1.slim.min.js")));
+		response.render(JavaScriptHeaderItem.forReference(new JavaScriptResourceReference(ClickCounterPage.class, "../assets/bootstrap.min.js")));
+		response.render(JavaScriptHeaderItem.forReference(new JavaScriptResourceReference(ClickCounterPage.class, "../assets/popper.min.js")));
+	}
 
 	private int linkClicks, ajaxLinkClicks;
 

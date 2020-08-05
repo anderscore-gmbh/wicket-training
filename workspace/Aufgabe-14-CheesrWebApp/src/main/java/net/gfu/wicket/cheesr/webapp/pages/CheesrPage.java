@@ -1,13 +1,12 @@
 package net.gfu.wicket.cheesr.webapp.pages;
 
+import net.gfu.wicket.backend.bo.Cart;
+import net.gfu.wicket.cheesr.webapp.CheesrSession;
 import org.apache.wicket.markup.head.CssHeaderItem;
 import org.apache.wicket.markup.head.IHeaderResponse;
 import org.apache.wicket.markup.head.JavaScriptHeaderItem;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.model.Model;
-
-import net.gfu.wicket.backend.bo.Cart;
-import net.gfu.wicket.cheesr.webapp.CheesrSession;
 import org.apache.wicket.request.resource.CssResourceReference;
 import org.apache.wicket.request.resource.JavaScriptResourceReference;
 
