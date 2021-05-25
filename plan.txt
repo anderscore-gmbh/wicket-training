@@ -39,3 +39,11 @@ MITTAGSPAUSE
 Übungen 10 - 20
 Tag-3_2-Best-Practices
 Tag-3_3-Abschluss
+
+
+
+Info: Nur Übungsaufgaben(ab Nr. 10-20), keine Slides!
+------
+Security & Deployment
+Lokalisierung & Internationalisierung
+Performance
