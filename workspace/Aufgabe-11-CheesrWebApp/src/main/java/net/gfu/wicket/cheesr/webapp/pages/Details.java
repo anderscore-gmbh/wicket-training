@@ -1,6 +1,8 @@
 package net.gfu.wicket.cheesr.webapp.pages;
 
 import org.apache.wicket.markup.html.basic.Label;
+import org.apache.wicket.markup.html.form.Button;
+import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.model.Model;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 
@@ -23,6 +25,14 @@ public class Details extends CheesrPage {
         } else {
             add(new Label("details", "Cheese '" + name + "' not found."));
         }
+
+        add(new Link<Void>("backToIndex"){
+
+            @Override
+        public void onClick() {
+            setResponsePage(Index.class);
+        }
+    });
     }
 
     public Cheese getCheese(String name) {
