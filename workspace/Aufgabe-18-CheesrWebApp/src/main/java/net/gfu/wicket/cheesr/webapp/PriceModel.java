@@ -1,6 +1,7 @@
 package net.gfu.wicket.cheesr.webapp;
 
 import java.text.NumberFormat;
+import java.util.Locale;
 
 import org.apache.wicket.Session;
 import org.apache.wicket.model.IModel;
@@ -13,7 +14,7 @@ public class PriceModel implements IModel<String> {
 	private String value;
 	
 	public PriceModel(Number value){
-		NumberFormat fmt = NumberFormat.getCurrencyInstance(Session.get().getLocale());
+		NumberFormat fmt = NumberFormat.getCurrencyInstance(Locale.US);
 		this.value = fmt.format(value);
 	}
 	

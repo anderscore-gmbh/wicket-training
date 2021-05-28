@@ -2,7 +2,9 @@ package net.gfu.wicket.cheesr.webapp.components;
 
 import java.text.NumberFormat;
 import java.util.List;
+import java.util.Locale;
 
+import jdk.vm.ci.meta.Local;
 import org.apache.wicket.Session;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.link.Link;
@@ -49,7 +51,7 @@ public class ShoppingCartPanel extends Panel {
 
 			@Override
 			public String getObject() {
-				NumberFormat nfs = NumberFormat.getCurrencyInstance(Session.get().getLocale());
+				NumberFormat nfs = NumberFormat.getCurrencyInstance(Locale.US);
 				return nfs.format(getCart().getTotal());
 			}
 		}));

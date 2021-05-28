@@ -7,6 +7,7 @@ public class TestWicketApplication extends WicketApplication{
     @Override
     public void init() {
         super.init();
+        // Womögliche Logins umgehen
         getSecuritySettings().setAuthorizationStrategy(IAuthorizationStrategy.ALLOW_ALL);
     }
 }

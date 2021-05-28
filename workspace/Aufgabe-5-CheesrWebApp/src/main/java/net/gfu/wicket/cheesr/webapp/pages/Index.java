@@ -62,7 +62,7 @@ public class Index extends CheesrPage {
 
 			@Override
 			public String getObject() {
-				NumberFormat nfs = NumberFormat.getCurrencyInstance();
+				NumberFormat nfs = NumberFormat.getCurrencyInstance(Locale.US);
 				return nfs.format(getCart().getTotal());
 			}
 		}));

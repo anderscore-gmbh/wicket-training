@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>Wicket Training: Cheesr - Cheese Online</title>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Examples</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <h2>Echo-Formular</h2>
+    <form wicket:id="form">
+        <div class="form-group">
+            <label for="echo-input">Geben Sie einen Text ein:</label>
+            <input id="echo-input" wicket:id="echo-input" class="form-control" type="text"/>
+        </div>
+        <button type="submit" wicket:id="submit-button" class="btn btn-default">Submit</button>
+    </form>
+    <h2>Server-Antwort</h2>
+    <pre wicket:id="echo-message"></pre>
+</div>
+<!-- /.container -->
+</body>
+</html>

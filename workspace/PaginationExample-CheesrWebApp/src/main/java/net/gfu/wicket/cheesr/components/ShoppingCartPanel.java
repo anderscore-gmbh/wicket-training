@@ -47,7 +47,7 @@ public class ShoppingCartPanel extends Panel {
 
 			@Override
 			public String getObject() {
-				NumberFormat nfs = NumberFormat.getCurrencyInstance();
+				NumberFormat nfs = NumberFormat.getCurrencyInstance(Locale.US);
 				return nfs.format(getCart().getTotal());
 			}
 		}));

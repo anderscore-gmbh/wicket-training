@@ -1,5 +1,7 @@
 package net.gfu.wicket.cheesr.webapp;
 
+import net.gfu.wicket.cheesr.webapp.pages.ClickCounterPage;
+import net.gfu.wicket.cheesr.webapp.pages.EchoFormPage;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.protocol.http.WebApplication;
 
