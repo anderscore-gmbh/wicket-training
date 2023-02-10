@@ -52,14 +52,14 @@ public class ShoppingCartPanelTest {
 		tester.assertComponent("panel:cart", ListView.class);
 		
 		tester.assertLabel("panel:cart:0:name", "Gouda");
-		tester.assertLabel("panel:cart:0:price", "$ 1.33");
+		tester.assertLabel("panel:cart:0:price", "€ 1.33");
 		tester.assertComponent("panel:cart:0:remove", Link.class);
 		
 		tester.assertLabel("panel:cart:1:name", "Edam");
-		tester.assertLabel("panel:cart:1:price", "$ 0.65");
+		tester.assertLabel("panel:cart:1:price", "€ 0.65");
 		tester.assertComponent("panel:cart:1:remove", Link.class);
 
-		tester.assertLabel("panel:total", "$1.98");
+		tester.assertLabel("panel:total", "1,98 €");
 	}
 	
 	@Test

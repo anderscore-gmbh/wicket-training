@@ -22,7 +22,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.gfu.wicket</groupId>
 	<artifactId>cheesr-webapp</artifactId>
-	<packaging>war</packaging>
+<!--	<packaging>war</packaging>-->
 	<version>1.0-SNAPSHOT</version>
 
 	<name>Cheesr WebApp</name>
@@ -38,8 +38,11 @@
 	<properties>
 		<backend.version>1.0-SNAPSHOT</backend.version>
 
-		<wicket.version>9.3.0</wicket.version>
-		<spring.version>5.2.3.RELEASE</spring.version>
+		<!-- Wicket 8 Versions: https://github.com/apache/wicket/blob/wicket-8.x/pom.xml#L137 -->
+		<!-- Wicket 9 Versions: https://github.com/apache/wicket/blob/wicket-9.x/pom.xml#L174 -->
+		<!-- Wicket 10 Versions: https://github.com/apache/wicket/blob/80726e2dae60e5893be0621761883f2dec20cac0/pom.xml#L185 -->
+		<wicket.version>8.14.0</wicket.version>
+		<spring.version>4.3.30.RELEASE</spring.version>
 		<jetty9.version>9.4.29.v20200521</jetty9.version>
 		<slf4j.version>1.7.30</slf4j.version>
 		<junit.version>5.6.2</junit.version>
@@ -118,6 +121,12 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-war-plugin</artifactId>
+			<version>3.3.2</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -190,6 +199,14 @@
 					<wtpversion>${wtp.version}</wtpversion>
 				</configuration>
 			</plugin>
+
+<!--			<plugin>-->
+<!--				<groupId>org.apache.maven.plugins</groupId>-->
+<!--				<artifactId>maven-war-plugin</artifactId>-->
+<!--				<configuration>-->
+<!--					<webXml>src\main\webapp\WEB-INF\web.xml</webXml>-->
+<!--				</configuration>-->
+<!--			</plugin>-->
 		</plugins>
 	</build>
 

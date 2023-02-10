@@ -31,7 +31,7 @@ public class ShoppingCartPanel extends Panel {
 			protected void populateItem(ListItem<Cheese> item) {
 				Cheese cheese = item.getModelObject();
 				item.add(new Label("name",cheese.getName()));
-				item.add(new Label("price", "$ " + cheese.getPrice()));
+				item.add(new Label("price", "€ " + cheese.getPrice()));
 				item.add(new Link<Cheese>("remove",item.getModel()){
 					private static final long serialVersionUID = 1L;
 					@Override
@@ -48,8 +48,10 @@ public class ShoppingCartPanel extends Panel {
 
 			@Override
 			public String getObject() {
-				NumberFormat nfs = NumberFormat.getCurrencyInstance(Locale.US);
-				return nfs.format(getCart().getTotal());
+				NumberFormat nfs = NumberFormat.getCurrencyInstance(Locale.GERMANY);
+				String format = nfs.format(getCart().getTotal());
+				System.out.println(format);
+				return format;
 			}
 		}));
 	}

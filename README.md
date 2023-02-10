@@ -1,6 +1,5 @@
 # Training "Einführung Apache Wicket"
 
-* Hinweise (Readme) zum Kurs befinden sich auf dem Windows-Share smb://192.168.2.206/anderScore/Technology/_Trainings/GFU/Wicket
 * Die Datei [plan.txt](plan.txt) skizziert einen möglichen Ablauf.
 * Bitte prüft vorher den Migration-Guide zu Wicket 9, ob es ggf. weitere Änderungen gab. Zuletzt musste man die Dependencies und Plugins (maven-surefire) anpassen bzw. ergänzen, damit bei einem "mvn clean install" ebenso die Tests ausgeführt werden.
 

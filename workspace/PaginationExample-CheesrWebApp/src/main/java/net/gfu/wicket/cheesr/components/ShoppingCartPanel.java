@@ -2,6 +2,7 @@ package net.gfu.wicket.cheesr.components;
 
 import java.text.NumberFormat;
 import java.util.List;
+import java.util.Locale;
 
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.link.Link;
