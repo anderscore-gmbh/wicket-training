@@ -70,4 +70,5 @@ public class ClickCounterPage extends WebPage {
 		add(linkLabel, ajaxLinkLabel);
 		add(link, ajaxLink);
 	}
+
 }

@@ -2,6 +2,7 @@ package net.gfu.wicket.cheesr.webapp.pages;
 
 import java.text.NumberFormat;
 import java.util.List;
+import java.util.Locale;
 
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.link.Link;
@@ -48,7 +49,6 @@ public class Index extends CheesrPage {
             private static final long serialVersionUID = 1L;
 
             @Override
-
             public void onClick() {
                 setResponsePage(new Checkout());
             }

@@ -16,7 +16,7 @@ public class Index extends CheesrPage {
 	public Index(final PageParameters parameters) {
 		super();
 		CheeseListModel m = new CheeseListModel();
-		
+
 		add(new ListView<Cheese>("cheeses", m) {
 			private static final long serialVersionUID = 1L;
 			@Override
