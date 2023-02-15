@@ -3,8 +3,6 @@ package net.gfu.wicket.cheesr.webapp.pages;
 import net.gfu.wicket.cheesr.webapp.TestWicketApplication;
 import org.apache.wicket.util.tester.FormTester;
 import org.apache.wicket.util.tester.WicketTester;
-
-import net.gfu.wicket.cheesr.webapp.WicketApplication;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
