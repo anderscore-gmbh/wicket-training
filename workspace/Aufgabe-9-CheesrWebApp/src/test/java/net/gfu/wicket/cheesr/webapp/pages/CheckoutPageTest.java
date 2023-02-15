@@ -1,21 +1,19 @@
 package net.gfu.wicket.cheesr.webapp.pages;
 
 import net.gfu.wicket.cheesr.webapp.TestWicketApplication;
-import org.apache.wicket.authorization.IAuthorizationStrategy;
+import net.gfu.wicket.cheesr.webapp.components.ShoppingCartPanel;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.panel.FeedbackPanel;
 import org.apache.wicket.util.tester.WicketTester;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
-import net.gfu.wicket.cheesr.webapp.WicketApplication;
-import net.gfu.wicket.cheesr.webapp.components.ShoppingCartPanel;
+import org.junit.Before;
+import org.junit.Test;
 
 public class CheckoutPageTest {
 
     private WicketTester tester;
 
-    @BeforeEach
+    @Before
+//    @BeforeEach
     public void setUp() {
         tester = new WicketTester(new TestWicketApplication());
         tester.startPage(Checkout.class);

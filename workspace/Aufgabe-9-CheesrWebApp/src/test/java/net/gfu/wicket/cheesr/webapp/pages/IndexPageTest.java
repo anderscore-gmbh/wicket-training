@@ -4,14 +4,15 @@ import net.gfu.wicket.cheesr.webapp.TestWicketApplication;
 import net.gfu.wicket.cheesr.webapp.components.ShoppingCartPanel;
 import org.apache.wicket.markup.html.list.ListView;
 import org.apache.wicket.util.tester.WicketTester;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.Before;
+import org.junit.Test;
 
 public class IndexPageTest {
 
     private WicketTester tester;
 
-    @BeforeEach
+    @Before
+//    @BeforeEach
     public void setUp() {
         tester = new WicketTester(new TestWicketApplication());
         tester.startPage(Index.class);
